@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SchwimmSpa&szlig; GmbH - Seepferdchen (5–10 Jahre)</title>
+        <link rel="stylesheet" href="style.css">
+                <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                document.querySelectorAll('.appointment').forEach(function (el) {
+                    el.style.display = 'none';
+                });
+            });
+
+            function showEvents(dayClass) {
+                document.querySelectorAll('.appointment').forEach(function (el) {
+                    el.style.display = 'none';
+                });
+
+                document.querySelectorAll('.event_' + dayClass).forEach(function (el) {
+                    el.style.display = 'flex';
+                });
+            }
+        </script> 
+    </head>
+
+    <body>
+
+        <div id="top"></div>
+
+        <!-- Navigation--->
+
+        <nav>
+            <div class="nav_container">
+                <a href="index.html" class="logo" title="Home">
+                    <img src="Bilder/Logo.svg" >
+                </a>
+                <div class="nav-right">
+                    <ul>
+                        <li>
+                            <a href="#" class="nav_item" title="News">
+                                News
+                            </a>
+                        </li>
+                        <li>
+                            <a href="index.html#events" class="nav_item" title="Angebote + Events">
+                                Angebote + Events
+                            </a>
+                        </li>
+                        <li>
+                            <a href="index.html#opening_hours_and_prices" class="nav_item" title="&Ouml;ffnungszeiten + Preise" >
+                                &Ouml;ffnungszeiten + Preise
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#contact" class="nav_item" title="Kontakt">
+                                Kontakt
+                            </a>
+                        </li>
+                    </ul>
+
+                    <div class="burger">
+                        <a href="#burger_content">
+                            <svg class="burger_svg" viewBox="0 0 39 19.001">
+                                <g id="Gruppe_279" data-name="Gruppe 279" transform="translate(-830 -31.162)">
+                                    <g id="Gruppe_278" data-name="Gruppe 278">
+                                        <line id="Linie_39" data-name="Linie 39" x2="36" transform="translate(831.5 48.663)" fill="none" stroke="#222" stroke-linecap="round" stroke-width="3"/>
+                                        <path id="Pfad_243" data-name="Pfad 243" d="M0,0H36" transform="translate(831.5 32.662)" fill="none" stroke="#222" stroke-linecap="round" stroke-width="3"/>
+                                        <line id="Linie_40" data-name="Linie 40" x2="36" transform="translate(831.5 40.663)" fill="none" stroke="#222" stroke-linecap="round" stroke-width="3"/>
+                                    </g>
+                                </g>
+                            </svg>
+
+
+                            <span>Men&uuml;</span>
+
+                        </a>
+
+                        <div class="burger_content" id="burger_content">
+                            <a href="#">
+                                <svg width="17" height="17" viewBox="0 0 17 17">
+                                    <g transform="translate(-1564.095 -67.634)">
+                                        <rect width="20.925" height="3.116" transform="translate(1581.095 69.838) rotate(135)"/>
+                                        <rect width="20.925" height="3.117" transform="translate(1566.299 67.634) rotate(45)"/>
+                                    </g>
+                                </svg>
+
+                            </a>
+
+                            <ul class=burger_nav>
+                                <li><a href="#" class="nav_item" title="News">News</a></li>
+                                <li><a href="index.html#events" class="nav_item" title="Angebote + Events">Angebote + Events</a></li>
+                                <li><a href="index.html#opening_hours_and_prices" class="nav_item" title="&Ouml;ffnungszeiten + Preise" > &Ouml;ffnungszeiten + Preise</a></li>
+                                <li><a href="#contact" class="nav_item" title="Kontakt">Kontakt</a></li>
+
+                            </ul>
+                        </div>
+                        <div id="burger_wrap"></div>
+                    </div>
+                </div>
+            </div>    
+        </nav>
+
+
+        <!-- Header--->
+
+        <header class="header detail_page-header">
+
+            <div class="header-left detail_page-image" style="background-image: url(Bilder/Bild_11.png)" title="Kinder auf am Beckenrand">
+
+            </div>
+
+            <div class="header-right">
+                <img src="Bilder/Seepferdchen.svg" class="detail_page-icon" alt="Seepferdchen Icon"/>
+                <h1>Seepferdchen (5-10 Jahre)</h1>
+                <hr>
+                <p>
+            Die Kinder lernen, Arme und Beine im Wasser zu koordinieren und sie trainieren Kraft und Ausdauer. Bei der Seepferdchenprüfung müssen sie vom Beckenrand springen und sofort 
+25 Meter Schwimmen. Außerdem müssen sie einen Gegenstand aus dem schultertiefen 
+Wasser holen und zeigen, dass sie die wichtigsten Baderegeln kennen.
+
+                </p>
+            </div>
+
+        </header>
+
+        <!-- Main--->
+
+        <main>
+            <section class="gray_bg">
+                <svg class="divider" viewBox="0 0 1400 160.762">
+                    <path id="divider_white" data-name="divider_white" d="M1224.345-7136.189c-5.99-4.29-11.237-10.317-16.788-16.7l-.011-.015a193.016,193.016,0,0,0-15.674-16.578c-1.222-1.118-2.583-2.433-4.021-3.824l-.005-.005-.018-.017,0-.005a183.7,183.7,0,0,0-13.921-12.463,127.663,127.663,0,0,0-21.587-13.881,141.672,141.672,0,0,0-14.472-6.376,163.859,163.859,0,0,0-17.351-5.414,197.89,197.89,0,0,0-20.557-4.014c-7.635-1.085-15.738-1.816-24.079-2.173-14.964.5-29.626,2.223-43.8,3.892l-.022,0c-16.673,1.963-33.914,3.99-51.551,3.99a193.226,193.226,0,0,1-44.965-5.041,61.827,61.827,0,0,1-11.44-3.611,85.415,85.415,0,0,1-10.663-5.45,230.035,230.035,0,0,1-20.2-14.108l-.013-.013c-17.833-13.407-36.271-27.271-63.171-27.271a91.046,91.046,0,0,0-21.914,2.841,75.121,75.121,0,0,0-10.836,3.545,57.341,57.341,0,0,0-8.795,4.587,48.526,48.526,0,0,0-12.606,11.628c-6.574,8.632-10,18.756-13.314,28.544-6.563,19.382-12.761,37.687-42.076,41.665a96.361,96.361,0,0,1-12.9.838,133.328,133.328,0,0,1-20.588-1.71c-6.623-1.032-13.656-2.518-21.5-4.545-14.613-3.776-29.439-8.745-45.137-14.009l-.8-.265-1.425-.478-.8-.267-1.032-.346c-16.568-5.543-32.795-10.851-49.18-14.863-8.908-2.181-17.046-3.784-24.88-4.9a177.337,177.337,0,0,0-24.843-1.857c-1.209,0-2.415.015-3.584.044a146.9,146.9,0,0,0-25.087,2.867,220.684,220.684,0,0,0-25.07,6.616c-16.751,5.4-33.338,12.4-50.9,19.8l-.015.005c-19.6,8.266-39.857,16.813-60.962,23.255a261.84,261.84,0,0,1-32.388,7.82,199.614,199.614,0,0,1-34.057,2.987c-.789,0-1.508,0-2.194-.015-45.345-.53-66.952-16.684-86.016-30.936l-.007-.006c-7.593-5.675-14.764-11.036-22.869-14.984a63.115,63.115,0,0,0-13.023-4.72,65.2,65.2,0,0,0-15.418-1.758,91.036,91.036,0,0,0-14.682,1.277,347.634,347.634,0,0,0-35.222,7.457,175.912,175.912,0,0,0-24.472,8.489c-13.6,5.974-22.637,12.573-32.209,19.556l-.009.007h0c-3.249,2.371-6.608,4.821-10.22,7.3a59.287,59.287,0,0,1-18.385,8.435,64.64,64.64,0,0,1-16.57,2.118A60.677,60.677,0,0,1-23-7151.464V-7290l1400,0v60.655a123.225,123.225,0,0,1-12.681,4.962l-.016.007c-6.2,2.17-12.609,4.413-18.982,8.172a58.949,58.949,0,0,0-9.514,6.961,68.128,68.128,0,0,0-9.32,10.337c-3.846,5.194-7.126,11.475-10.6,18.124l0,.005c-2.874,5.5-5.845,11.188-9.382,16.75a83.585,83.585,0,0,1-12.67,15.788,65.144,65.144,0,0,1-8.352,6.771,65.142,65.142,0,0,1-10.119,5.619,74.653,74.653,0,0,1-12.2,4.157,95.668,95.668,0,0,1-14.594,2.395c-.8.039-1.6.059-2.377.059A35.829,35.829,0,0,1,1224.345-7136.189Z" transform="translate(22.999 7289.997)" fill="#fff"/>
+                </svg>
+                <div class="section_container detail_page-info">
+                    <div class="detail_page-info-item">
+                        <div class="detail_page-info-item-marker"></div>
+                        <div class="detail_page-info-item-left">
+                            <h5>Schwimmabzeichen Silber</h5>
+                            <p>ab Donnerstag, 6. Juli 2023 <br>10 × 45 Min.<br/>
+                            Sa/So inklusive
+                            </p>
+                        </div>
+
+                        <div class="detail_page-info-item-right">
+
+                            <span class="time">9.30 bis 10.15 Uhr</span>
+                            <div>
+                                <span class="price">EUR 64,–</span>
+                            </div>
+                        </div>
+                    </div>
+                                        <div class="detail_page-info-item">
+                        <div class="detail_page-info-item-marker"></div>
+                        <div class="detail_page-info-item-left">
+                            <h5>Schwimmabzeichen Silber</h5>
+                            <p>ab Donnerstag, 20. Juli 2023<br>10 × 45 Min.<br/>
+                            Sa/So inklusive
+                            </p>
+                        </div>
+
+                        <div class="detail_page-info-item-right">
+
+                            <span class="time">9.30 bis 10.15 Uhr</span>
+                            <div>
+                                <span class="price">EUR 64,–</span>
+                            </div>
+                        </div>
+                    </div>
+                                                            <div class="detail_page-info-item">
+                        <div class="detail_page-info-item-marker"></div>
+                        <div class="detail_page-info-item-left">
+                            <h5>Schwimmabzeichen Silber</h5>
+                            <p>Montag, 31. Juli bis Freitag, 11. August 2023<br>10 × 45 Min.<br/>
+                            ohne Sa/So 
+                            </p>
+                        </div>
+
+                        <div class="detail_page-info-item-right">
+
+                            <span class="time">9.30 bis 10.15 Uhr</span>
+                            <div>
+                                <span class="price">EUR 64,–</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="gray_bg">
+                <div class="section_container detail_page-section">
+                    
+               
+                    <!--Kalender --->
+
+                    <div class="calendar_container">
+                        <div class="is-half">
+                            <div class="calendar_slider">
+                                <input type="radio" id="calendar_slide1" name="calendarslider" class="calendar_input" checked >
+                                <input type="radio" id="calendar_slide2" name="calendarslider" class="calendar_input">
+
+                                <div class="calendar_slides">
+                                    <div class="calendar_slide">
+                                        <!--slide1-->
+                                        <div class="calendar">
+                                            <div class="calendar-header">
+                                                <h3>Juli 2023</h3>
+                                            </div>
+                                            <div class="calendar-days">
+                                                <div class="weekday">Mo</div>
+                                                <div class="weekday">Di</div>
+                                                <div class="weekday">Mi</div>
+                                                <div class="weekday">Do</div>
+                                                <div class="weekday">Fr</div>
+                                                <div class="weekday">Sa</div>
+                                                <div class="weekday">So</div>
+                                                <div class="day empty"></div>
+                                                <div class="day empty"></div>
+                                                <div class="day empty"></div>
+                                                <div class="day empty"></div>
+                                                <div class="day empty"></div>
+                                                <div class="day">1</div>
+                                                <div class="day">2</div>
+                                                <div class="day">3</div>
+                                                <div class="day event" onclick="showEvents('040723')">4</div>
+                                                <div class="day">5</div>
+                                                <div class="day event" onclick="showEvents('060723')">6</div>
+                                                <div class="day event" onclick="showEvents('070723')">7</div>
+                                                <div class="day event" onclick="showEvents('080723')">8</div>
+                                                <div class="day event" onclick="showEvents('090723')">9</div>
+                                                <div class="day">10</div>
+                                                <div class="day event" onclick="showEvents('110723')">11</div>
+                                                <div class="day">12</div>
+                                                <div class="day">13</div>
+                                                <div class="day event"  onclick="showEvents('140723')">14</div>
+                                                <div class="day">15</div>
+                                                <div class="day">16</div>
+                                                <div class="day">17</div>
+                                                <div class="day event" onclick="showEvents('180723')">18</div>
+                                                <div class="day">19</div>
+                                                <div class="day event" onclick="showEvents('200723')">20</div>
+                                                <div class="day event" onclick="showEvents('210723')">21</div>
+                                                <div class="day event" onclick="showEvents('220723')">22</div>
+                                                <div class="day event" onclick="showEvents('230723')">23</div>
+                                                <div class="day">24</div>
+                                                <div class="day event" onclick="showEvents('250723')">25</div>
+                                                <div class="day">26</div>
+                                                <div class="day">27</div>
+                                                <div class="day event" onclick="showEvents('280723')">28</div>
+                                                <div class="day">29</div>
+                                                <div class="day ">30</div>
+                                                <div class="day event" onclick="showEvents('310723')">31</div>
+                                                <div class="day empty"></div>
+                                                <div class="day empty"></div>
+                                                <div class="day empty"></div>
+                                                <div class="day empty"></div>
+                                                <div class="day empty"></div>
+                                                <div class="day empty"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="calendar_slide">
+                                        <!--slide2-->
+                                        <div class="calendar">
+                                            <div class="calendar-header">
+                                                <h3>August 2023</h3>
+                                            </div>
+                                            <div class="calendar-days">
+                                                <div class="weekday">Mo</div>
+                                                <div class="weekday">Di</div>
+                                                <div class="weekday">Mi</div>
+                                                <div class="weekday">Do</div>
+                                                <div class="weekday">Fr</div>
+                                                <div class="weekday">Sa</div>
+                                                <div class="weekday">So</div>
+                                                <div class="day empty"></div>
+                                                <div class="day event" onclick="showEvents('010823')">1</div>
+                                                <div class="day event" onclick="showEvents('020823')">2</div>
+                                                <div class="day event" onclick="showEvents('030823')">3</div>
+                                                <div class="day event" onclick="showEvents('040823')">4</div>
+                                                <div class="day ">5</div>
+                                                <div class="day">6</div>
+                                                <div class="day event" onclick="showEvents('070823')">7</div>
+                                                <div class="day event" onclick="showEvents('080823')">8</div>
+                                                <div class="day event" onclick="showEvents('090823')">9</div>
+                                                <div class="day event" onclick="showEvents('100823')">10</div>
+                                                <div class="day event" onclick="showEvents('110823')">11</div>
+                                                <div class="day">12</div>
+                                                <div class="day">13</div>
+                                                <div class="day ">14</div>
+                                                <div class="day event" onclick="showEvents('150823')">15</div>
+                                                <div class="day">16</div>
+                                                <div class="day">17</div>
+                                                <div class="day event" onclick="showEvents('180823')">18</div>
+                                                <div class="day">19</div>
+                                                <div class="day ">20</div>
+                                                <div class="day ">21</div>
+                                                <div class="day event" onclick="showEvents('220823')">22</div>
+                                                <div class="day ">23</div>
+                                                <div class="day">24</div>
+                                                <div class="day event" onclick="showEvents('250823')">25</div>
+                                                <div class="day">26</div>
+                                                <div class="day">27</div>
+                                                <div class="day ">28</div>
+                                                <div class="day event" onclick="showEvents('290823')">29</div>
+                                                <div class="day ">30</div>
+                                                <div class="day ">31</div>
+                                                <div class="day empty"></div>
+                                                <div class="day empty"></div>
+                                                <div class="day empty"></div>
+                                                <div class="day empty"></div>
+                                                <div class="day empty"></div>
+                                            </div>
+                                        </div> 
+                                    </div>
+                                </div>
+
+                                <div class="calendar_slider-nav">
+                                    <label for="calendar_slide1">
+
+                                        <svg class="nav_buttons" width="16.177" height="23.868" viewBox="0 0 16.177 23.868">
+                                            <path id="Pfad_297" data-name="Pfad 297" d="M0,0,7.691,7.691,15.382,0" transform="translate(11.934 4.243) rotate(90)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="6"/>
+                                        </svg>
+                                    </label>
+                                    <label for="calendar_slide2">
+
+                                        <svg class="nav_buttons" width="16.176" height="23.868" viewBox="0 0 16.176 23.868">
+                                            <path id="Pfad_296" data-name="Pfad 296" d="M0,7.691,7.691,0l7.691,7.691" transform="translate(11.934 4.243) rotate(90)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="6"/>
+                                        </svg>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="calendar_label_container">
+                                <div class="calendar_label free">
+                                    <div class="calendar_label-marker"> </div>
+                                    <span>Frei</span> 
+                                </div>
+                                <div class="calendar_label booked">
+                                    <div class="calendar_label-marker"> </div>
+                                    <span>Ausgebucht</span> 
+                                </div>
+                            </div>
+                        </div>  
+                        <div class="is-half appointments">
+
+
+                            <!---Termine Juli-->      
+
+
+                            <a class="appointment calendar_label booked event_040723" href="#">
+                                <div class="calendar_label-marker"> </div>
+                                <div class="appointment-info">
+                                    <strong>Aqua-Fitness</strong> 
+                                    <p>4. Juli 2023</p>
+                                </div>
+                                <div class="time">12.30 Uhr</div>
+                            </a>
+
+                            <a class="appointment calendar_label free event_060723" href="#">
+                                <div class="calendar_label-marker"> </div>
+                                <div class="appointment-info">
+                                    <strong>Seepferdchen</strong> 
+                                    <p>6. Juli 2023</p>
+                                </div>
+                                <div class="time">9.30 bis 10.15 Uhr</div>
+                            </a>
+
+                            <a class="appointment calendar_label booked event_060723" href="#">
+                                <div class="calendar_label-marker"> </div>
+                                <div class="appointment-info">
+                                    <strong>Schwimmabzeichen Silber	</strong> 
+                                    <p>6. Juli 2023</p>
+                                </div>
+                                <div class="time">11.30 bis 12.15 Uhr</div>
+                            </a>
+
+                            <a class="appointment calendar_label free event_070723" href="#">
+                                <div class="calendar_label-marker"> </div>
+                                <div class="appointment-info">
+                                    <strong>Seepferdchen</strong> 
+                                    <p>7. Juli 2023</p>
+                                </div>
+                                <div class="time">9.30 bis 10.15 Uhr</div>
+                            </a>
+
+                            <a class="appointment calendar_label free event_070723" href="#">
+                                <div class="calendar_label-marker"> </div>
+                                <div class="appointment-info">
+                                    <strong>Schwimmabzeichen Silber	</strong> 
+                                    <p>7. Juli 2023</p>
+                                </div>
+                                <div class="time">11.30 bis 12.15 Uhr</div>
+                            </a>
+                            <a class="appointment calendar_label free event_080723" href="#">
+                                <div class="calendar_label-marker"> </div>
+                                <div class="appointment-info">
+                                    <strong>Seepferdchen</strong> 
+                                    <p>8. Juli 2023</p>
+                                </div>
+                                <div class="time">9.30 bis 10.15 Uhr</div>
+                            </a>
+
+                            <a class="appointment calendar_label free event_080723" href="#">
+                                <div class="calendar_label-marker"> </div>
+                                <div class="appointment-info">
+                                    <strong>Schwimmabzeichen Silber	</strong> 
+                                    <p>8. Juli 2023</p>
+                                </div>
+                                <div class="time">11.30 bis 12.15 Uhr</div>
+                            </a>
+
+                            <a class="appointment calendar_label booked event_090723" href="#">
+                                <div class="calendar_label-marker"> </div>
+                                <div class="appointment-info">
+                                    <strong>Seepferdchen</strong> 
+                                    <p>9. Juli 2023</p>
+                                </div>
+                                <div class="time">9.30 bis 10.15 Uhr</div>
+                            </a>
+
+                            <a class="appointment calendar_label free event_090723" href="#">
+                                <div class="calendar_label-marker"> </div>
+                                <div class="appointment-info">
+                                    <strong>Schwimmabzeichen Silber	</strong> 
+                                    <p>9. Juli 2023</p>
+                                </div>
+                                <div class="time">11.30 bis 12.15 Uhr</div>
+                            </a>
+
+                            <a class="appointment calendar_label free event_110723" href="#">
+                                <div class="calendar_label-marker"> </div>
+                                <div class="appointment-info">
+                                    <strong>Aqua-Fitness</strong> 
+                                    <p>11. Juli 2023</p>
+                                </div>
+                                <div class="time">12.30 Uhr</div>
+                            </a>
+                            
+                            <a class="appointment calendar_label free event_140723" href="#">
+                                <div class="calendar_label-marker"> </div>
+                                <div class="appointment-info">
+                                    <strong>Filmnacht im Pool</strong> 
+                                    <p>14. Juli 2023</p>
+                                </div>
+                                <div class="time">20 Uhr</div>
+                            </a>
+
+                            <a class="appointment calendar_label free event_180723" href="#">
+                                <div class="calendar_label-marker"> </div>
+                                <div class="appointment-info">
+                                    <strong>Aqua-Fitness</strong> 
+                                    <p>18. Juli 2023</p>
+                                </div>
+                                <div class="time">12.30 Uhr</div>
+                            </a>
+
+                            <a class="appointment calendar_label free event_200723" href="#">
+                                <div class="calendar_label-marker"> </div>
+                                <div class="appointment-info">
+                                    <strong>Seepferdchen</strong> 
+                                    <p>20. Juli 2023</p>
+                                </div>
+                                <div class="time">9.30 bis 10.15 Uhr</div>
+                            </a>
+
+                            <a class="appointment calendar_label booked event_200723" href="#">
+                                <div class="calendar_label-marker"> </div>
+                                <div class="appointment-info">
+                                    <strong>Schwimmabzeichen Silber	</strong> 
+                                    <p>20. Juli 2023</p>
+                                </div>
+                                <div class="time">11.30 bis 12.15 Uhr</div>
+                            </a>
+
+                            <a class="appointment calendar_label free" href="#">
+                                <div class="calendar_label-marker"> </div>
+                                <div class="appointment-info">
+                                    <strong>Seepferdchen</strong> 
+                                    <p>21. Juli 2023</p>
+                                </div>
+                                <div class="time">9.30 bis 10.15 Uhr</div>
+                            </a>
+
+                            <a class="appointment calendar_label free event_210723" href="#">
+                                <div class="calendar_label-marker"> </div>
+                                <div class="appointment-info">
+                                    <strong>Schwimmabzeichen Silber	</strong> 
+                                    <p>21. Juli 2023</p>
+                                </div>
+                                <div class="time">11.30 bis 12.15 Uhr</div>
+                            </a>
+
+                            <a class="appointment calendar_label booked event_210723" href="#">
+                                <div class="calendar_label-marker"> </div>
+                                <div class="appointment-info">
+                                    <strong>Filmnacht im Pool</strong> 
+                                    <p>21. Juli 2023</p>
+                                </div>
+                                <div class="time">20 Uhr</div>
+                            </a>
+
+                            <a class="appointment calendar_label free event_220723" href="#">
+                                <div class="calendar_label-marker"> </div>
+                                <div class="appointment-info">
+                                    <strong>Seepferdchen</strong> 
+                                    <p>22. Juli 2023</p>
+                                </div>
+                                <div class="time">9.30 bis 10.15 Uhr</div>
+                            </a>
+
+                            <a class="appointment calendar_label free event_220723" href="#">
+                                <div class="calendar_label-marker"> </div>
+                                <div class="appointment-info">
+                                    <strong>Schwimmabzeichen Silber	</strong> 
+                                    <p>22. Juli 2023</p>
+                                </div>
+                                <div class="time">11.30 bis 12.15 Uhr</div>
+                            </a>
+
+                            <a class="appointment calendar_label booked event_230723" href="#">
+                                <div class="calendar_label-marker"> </div>
+                                <div class="appointment-info">
+                                    <strong>Seepferdchen</strong> 
+                                    <p>23. Juli 2023</p>
+                                </div>
+                                <div class="time">9.30 bis 10.15 Uhr</div>
+                            </a>
+
+                            <a class="appointment calendar_label free event_230723" href="#">
+                                <div class="calendar_label-marker"> </div>
+                                <div class="appointment-info">
+                                    <strong>Schwimmabzeichen Silber	</strong> 
+                                    <p>23. Juli 2023</p>
+                                </div>
+                                <div class="time">11.30 bis 12.15 Uhr</div>
+                            </a>
+
+                            <a class="appointment calendar_label booked event_250723" href="#">
+                                <div class="calendar_label-marker"> </div>
+                                <div class="appointment-info">
+                                    <strong>Aqua-Fitness</strong> 
+                                    <p>25. Juli 2023</p>
+                                </div>
+                                <div class="time">12.30 Uhr</div>
+                            </a>
+                            <a class="appointment calendar_label booked event_280723" href="#">
+                                <div class="calendar_label-marker"> </div>
+                                <div class="appointment-info">
+                                    <strong>Filmnacht im Pool</strong> 
+                                    <p>28. Juli 2023</p>
+                                </div>
+                                <div class="time">20 Uhr</div>
+                            </a>
+
+                            <a class="appointment calendar_label free event_310723" href="#">
+                                <div class="calendar_label-marker"> </div>
+                                <div class="appointment-info">
+                                    <strong>Seepferdchen</strong> 
+                                    <p>31. Juli 2023</p>
+                                </div>
+                                <div class="time">9.30 bis 10.15 Uhr</div>
+                            </a>
+
+                            <a class="appointment calendar_label free event_310723" href="#">
+                                <div class="calendar_label-marker"> </div>
+                                <div class="appointment-info">
+                                    <strong>Schwimmabzeichen Silber	</strong> 
+                                    <p>31. Juli 2023</p>
+                                </div>
+                                <div class="time">11.30 bis 12.15 Uhr</div>
+                            </a>
+
+                            <!---Termine August-->     
+
+                            <a class="appointment calendar_label free event_010823" href="#">
+                                <div class="calendar_label-marker"> </div>
+                                <div class="appointment-info">
+                                    <strong>Seepferdchen</strong> 
+                                    <p>1. August 2023</p>
+                                </div>
+                                <div class="time">9.30 bis 10.15 Uhr</div>
+                            </a>
+
+                            <a class="appointment calendar_label free event_010823" href="#">
+                                <div class="calendar_label-marker"> </div>
+                                <div class="appointment-info">
+                                    <strong>Schwimmabzeichen Silber	</strong> 
+                                    <p>1. August 2023</p>
+                                </div>
+                                <div class="time">11.30 bis 12.15 Uhr</div>
+                            </a>
+
+                            <a class="appointment calendar_label booked event_010823" href="#">
+                                <div class="calendar_label-marker"> </div>
+                                <div class="appointment-info">
+                                    <strong>Aqua-Fitness</strong> 
+                                    <p>1. August 2023</p>
+                                </div>
+                                <div class="time">12.30 Uhr</div>
+                            </a>
+
+                            <a class="appointment calendar_label free event_020823" href="#">
+                                <div class="calendar_label-marker"> </div>
+                                <div class="appointment-info">
+                                    <strong>Seepferdchen</strong> 
+                                    <p>2. August 2023</p>
+                                </div>
+                                <div class="time">9.30 bis 10.15 Uhr</div>
+                            </a>
+
+
+                            <a class="appointment calendar_label free event_020823" href="#">
+                                <div class="calendar_label-marker"> </div>
+                                <div class="appointment-info">
+                                    <strong>Schwimmabzeichen Silber	</strong> 
+                                    <p>2. August 2023</p>
+                                </div>
+                                <div class="time">11.30 bis 12.15 Uhr</div>
+                            </a>
+                            <a class="appointment calendar_label free event_030823" href="#">
+                                <div class="calendar_label-marker"> </div>
+                                <div class="appointment-info">
+                                    <strong>Seepferdchen</strong> 
+                                    <p>3. August 2023</p>
+                                </div>
+                                <div class="time">9.30 bis 10.15 Uhr</div>
+                            </a>
+
+
+                            <a class="appointment calendar_label free event_030823" href="#">
+                                <div class="calendar_label-marker"> </div>
+                                <div class="appointment-info">
+                                    <strong>Schwimmabzeichen Silber	</strong> 
+                                    <p>3. August 2023</p>
+                                </div>
+                                <div class="time">11.30 bis 12.15 Uhr</div>
+                            </a>
+                            
+                            <a class="appointment calendar_label free event_040823" href="#">
+                                <div class="calendar_label-marker"> </div>
+                                <div class="appointment-info">
+                                    <strong>Seepferdchen</strong> 
+                                    <p>4. August 2023</p>
+                                </div>
+                                <div class="time">9.30 bis 10.15 Uhr</div>
+                            </a>
+
+
+                            <a class="appointment calendar_label free event_040823" href="#">
+                                <div class="calendar_label-marker"> </div>
+                                <div class="appointment-info">
+                                    <strong>Schwimmabzeichen Silber	</strong> 
+                                    <p>4. August 2023</p>
+                                </div>
+                                <div class="time">11.30 bis 12.15 Uhr</div>
+                            </a>
+
+
+                            <a class="appointment calendar_label free event_040823" href="#">
+                                <div class="calendar_label-marker"> </div>
+                                <div class="appointment-info">
+                                    <strong>Filmnacht im Pool</strong> 
+                                    <p>4. August 2023</p>
+                                </div>
+                                <div class="time">20 Uhr</div>
+                            </a>
+
+
+                            <a class="appointment calendar_label free event_070823" href="#">
+                                <div class="calendar_label-marker"> </div>
+                                <div class="appointment-info">
+                                    <strong>Seepferdchen</strong> 
+                                    <p>7. August 2023</p>
+                                </div>
+                                <div class="time">9.30 bis 10.15 Uhr</div>
+                            </a>
+
+
+                            <a class="appointment calendar_label free event_070823" href="#">
+                                <div class="calendar_label-marker"> </div>
+                                <div class="appointment-info">
+                                    <strong>Schwimmabzeichen Silber	</strong> 
+                                    <p>7. August 2023</p>
+                                </div>
+                                <div class="time">11.30 bis 12.15 Uhr</div>
+                            </a>
+
+                            <a class="appointment calendar_label free event_080823" href="#">
+                                <div class="calendar_label-marker"> </div>
+                                <div class="appointment-info">
+                                    <strong>Seepferdchen</strong> 
+                                    <p>8. August 2023</p>
+                                </div>
+                                <div class="time">9.30 bis 10.15 Uhr</div>
+                            </a>
+
+
+                            <a class="appointment calendar_label free event_080823" href="#">
+                                <div class="calendar_label-marker"> </div>
+                                <div class="appointment-info">
+                                    <strong>Schwimmabzeichen Silber	</strong> 
+                                    <p>8. August 2023</p>
+                                </div>
+                                <div class="time">11.30 bis 12.15 Uhr</div>
+                            </a>
+
+                            <a class="appointment calendar_label free event_080823" href="#">
+                                <div class="calendar_label-marker"> </div>
+                                <div class="appointment-info">
+                                    <strong>Aqua-Fitness</strong> 
+                                    <p>8. August 2023</p>
+                                </div>
+                                <div class="time">12.30 Uhr</div>
+                            </a>
+
+                            <a class="appointment calendar_label free event_090823" href="#">
+                                <div class="calendar_label-marker"> </div>
+                                <div class="appointment-info">
+                                    <strong>Seepferdchen</strong> 
+                                    <p>9. August 2023</p>
+                                </div>
+                                <div class="time">9.30 bis 10.15 Uhr</div>
+                            </a>
+                            <a class="appointment calendar_label free event_090823" href="#">
+                                <div class="calendar_label-marker"> </div>
+                                <div class="appointment-info">
+                                    <strong>Schwimmabzeichen Silber</strong> 
+                                    <p>9. August 2023</p>
+                                </div>
+                                <div class="time">11.30 bis 12.15 Uhr</div>
+                            </a>
+
+                            <a class="appointment calendar_label free event_100823" href="#">
+                                <div class="calendar_label-marker"> </div>
+                                <div class="appointment-info">
+                                    <strong>Seepferdchen</strong> 
+                                    <p>10. August 2023</p>
+                                </div>
+                                <div class="time">9.30 bis 10.15 Uhr</div>
+                            </a>
+
+                            <a class="appointment calendar_label free event_100823" href="#">
+                                <div class="calendar_label-marker"> </div>
+                                <div class="appointment-info">
+                                    <strong>Schwimmabzeichen Silber	</strong> 
+                                    <p>10. August 2023</p>
+                                </div>
+                                <div class="time">11.30 bis 12.15 Uhr</div>
+                            </a>
+                            <a class="appointment calendar_label free event_110823" href="#">
+                                <div class="calendar_label-marker"> </div>
+                                <div class="appointment-info">
+                                    <strong>Seepferdchen</strong> 
+                                    <p>11. August 2023</p>
+                                </div>
+                                <div class="time">9.30 bis 10.15 Uhr</div>
+                            </a>
+
+
+                            <a class="appointment calendar_label free event_110823" href="#">
+                                <div class="calendar_label-marker"> </div>
+                                <div class="appointment-info">
+                                    <strong>Schwimmabzeichen Silber	</strong> 
+                                    <p>11. August 2023</p>
+                                </div>
+                                <div class="time">11.30 bis 12.15 Uhr</div>
+                            </a>
+
+                            <a class="appointment calendar_label free" href="#">
+                                <div class="calendar_label-marker"> </div>
+                                <div class="appointment-info">
+                                    <strong>Filmnacht im Pool</strong> 
+                                    <p>11. August 2023</p>
+                                </div>
+                                <div class="time">11.30 bis 12.15 Uhr</div>
+                            </a>
+                            <a class="appointment calendar_label free event_150823" href="#">
+                                <div class="calendar_label-marker"> </div>
+                                <div class="appointment-info">
+                                    <strong>Aqua-Fitness</strong> 
+                                    <p>15. August 2023</p>
+                                </div>
+                                <div class="time">12.30 Uhr</div>
+                            </a>
+
+                            <a class="appointment calendar_label free event_180823" href="#">
+                                <div class="calendar_label-marker"> </div>
+                                <div class="appointment-info">
+                                    <strong>Filmnacht im Pool</strong> 
+                                    <p>18. August 2023</p>
+                                </div>
+                                <div class="time">11.30 bis 12.15 Uhr</div>
+                            </a>
+                            <a class="appointment calendar_label free event_220823" href="#">
+                                <div class="calendar_label-marker"> </div>
+                                <div class="appointment-info">
+                                    <strong>Aqua-Fitness</strong> 
+                                    <p>22. August 2023</p>
+                                </div>
+                                <div class="time">12.30 Uhr</div>
+                            </a>
+
+                            <a class="appointment calendar_label free event_250823" href="#">
+                                <div class="calendar_label-marker"> </div>
+                                <div class="appointment-info">
+                                    <strong>Filmnacht im Pool</strong> 
+                                    <p>25 August 2023</p>
+                                </div>
+                                <div class="time">11.30 bis 12.15 Uhr</div>
+                            </a>
+                            <a class="appointment calendar_label free event_290823" href="#">
+                                <div class="calendar_label-marker"> </div>
+                                <div class="appointment-info">
+                                    <strong>Aqua-Fitness</strong> 
+                                    <p>29. August 2023</p>
+                                </div>
+                                <div class="time">12.30 Uhr</div>
+                            </a>
+
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+                <!-- Back-To-Top-Button-->
+
+                <div class="back_to_top-wrapper">
+                    <a href="#top" class="back_to_top-button" aria-label="Scroll to Top">
+                        <svg width="23.868" height="16.177" viewBox="0 0 23.868 16.177">
+                            <path id="Pfad_49" data-name="Pfad 49" d="M3651.618,3323.421l7.691-7.691,7.691,7.691" transform="translate(-3647.375 -3311.487)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="6"/>
+                        </svg>
+                    </a>
+                </div>
+
+                </main>
+
+            <footer >
+                <section class="blue_bg">
+                    <svg class="divider" viewBox="0 0 1400 160.762">
+                        <path id="divider_white" data-name="divider_white" d="M1224.345-7136.189c-5.99-4.29-11.237-10.317-16.788-16.7l-.011-.015a193.016,193.016,0,0,0-15.674-16.578c-1.222-1.118-2.583-2.433-4.021-3.824l-.005-.005-.018-.017,0-.005a183.7,183.7,0,0,0-13.921-12.463,127.663,127.663,0,0,0-21.587-13.881,141.672,141.672,0,0,0-14.472-6.376,163.859,163.859,0,0,0-17.351-5.414,197.89,197.89,0,0,0-20.557-4.014c-7.635-1.085-15.738-1.816-24.079-2.173-14.964.5-29.626,2.223-43.8,3.892l-.022,0c-16.673,1.963-33.914,3.99-51.551,3.99a193.226,193.226,0,0,1-44.965-5.041,61.827,61.827,0,0,1-11.44-3.611,85.415,85.415,0,0,1-10.663-5.45,230.035,230.035,0,0,1-20.2-14.108l-.013-.013c-17.833-13.407-36.271-27.271-63.171-27.271a91.046,91.046,0,0,0-21.914,2.841,75.121,75.121,0,0,0-10.836,3.545,57.341,57.341,0,0,0-8.795,4.587,48.526,48.526,0,0,0-12.606,11.628c-6.574,8.632-10,18.756-13.314,28.544-6.563,19.382-12.761,37.687-42.076,41.665a96.361,96.361,0,0,1-12.9.838,133.328,133.328,0,0,1-20.588-1.71c-6.623-1.032-13.656-2.518-21.5-4.545-14.613-3.776-29.439-8.745-45.137-14.009l-.8-.265-1.425-.478-.8-.267-1.032-.346c-16.568-5.543-32.795-10.851-49.18-14.863-8.908-2.181-17.046-3.784-24.88-4.9a177.337,177.337,0,0,0-24.843-1.857c-1.209,0-2.415.015-3.584.044a146.9,146.9,0,0,0-25.087,2.867,220.684,220.684,0,0,0-25.07,6.616c-16.751,5.4-33.338,12.4-50.9,19.8l-.015.005c-19.6,8.266-39.857,16.813-60.962,23.255a261.84,261.84,0,0,1-32.388,7.82,199.614,199.614,0,0,1-34.057,2.987c-.789,0-1.508,0-2.194-.015-45.345-.53-66.952-16.684-86.016-30.936l-.007-.006c-7.593-5.675-14.764-11.036-22.869-14.984a63.115,63.115,0,0,0-13.023-4.72,65.2,65.2,0,0,0-15.418-1.758,91.036,91.036,0,0,0-14.682,1.277,347.634,347.634,0,0,0-35.222,7.457,175.912,175.912,0,0,0-24.472,8.489c-13.6,5.974-22.637,12.573-32.209,19.556l-.009.007h0c-3.249,2.371-6.608,4.821-10.22,7.3a59.287,59.287,0,0,1-18.385,8.435,64.64,64.64,0,0,1-16.57,2.118A60.677,60.677,0,0,1-23-7151.464V-7290l1400,0v60.655a123.225,123.225,0,0,1-12.681,4.962l-.016.007c-6.2,2.17-12.609,4.413-18.982,8.172a58.949,58.949,0,0,0-9.514,6.961,68.128,68.128,0,0,0-9.32,10.337c-3.846,5.194-7.126,11.475-10.6,18.124l0,.005c-2.874,5.5-5.845,11.188-9.382,16.75a83.585,83.585,0,0,1-12.67,15.788,65.144,65.144,0,0,1-8.352,6.771,65.142,65.142,0,0,1-10.119,5.619,74.653,74.653,0,0,1-12.2,4.157,95.668,95.668,0,0,1-14.594,2.395c-.8.039-1.6.059-2.377.059A35.829,35.829,0,0,1,1224.345-7136.189Z" transform="translate(22.999 7289.997)" fill="#f1f5f9"/>
+                    </svg>
+
+                    <!-- Kontakt--->
+                    <div class="section_container" id="contact">
+                        <div class="box_white">
+                            <h2 class="contact_heading">Kontakt</h2>
+                            <div class="contact_item">
+                                <img src="Bilder/map_marker.svg" class="contact_item-icon">
+                                <span>
+                                    Badstraße 5
+                                    <br>
+                                    50555 Wasserland
+                                </span>
+                            </div>
+                            <div class="contact_item">
+                                <img src="Bilder/phone.svg" class="contact_item-icon">
+                                <span>
+                                    <a href="tel:0011/2200-0">Tel: 0011/2200-0</a> 
+                                </span>
+                            </div>
+                            <div class="contact_item">
+                                <img src="Bilder/envelope.svg" class="contact_item-icon">
+                                <a href= "mailto:info@schwimmspass-wasserland.de"><span>info@schwimmspass-wasserland.de</span></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+                <div class="footer_bottom">
+                    <a href="imprint.html" class="footer_link" title="Impressum">Impressum</a><span class="footer_divider">|</span><a href="#" class="footer_link" title="ImpreDatenschutzssum">Datenschutz</a>
+                </div>
+            </footer>
+
+            </body>
+        </html>
